@@ -10,6 +10,8 @@ export default function CodeEditor(props) {
         options={{
           minimap: { enabled: false },
           lineNumbers: false,
+          fontSize: 18,
+          contextmenu: false,
         }}
         {...props}
       />
