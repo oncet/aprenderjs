@@ -9,8 +9,12 @@ export default function HelloWorld() {
   const [codeOutput, setCodeOutput] = useState()
   const handleOnClick = () => {
     setCodeExecuted(true)
-    const result = Function(`"use strict"; ${code}`)(); // TODO Move out
-    setCodeOutput(result)
+    try {
+      const result = Function(`"use strict"; ${code}`)(); // TODO Move out
+      setCodeOutput(result)
+    } catch(error) {
+      setCodeOutput(`${error.name} ${error.message}`)
+    }
   }
   return (
     <>
