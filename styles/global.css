@@ -20,4 +20,11 @@
   p {
     @apply mb-2;
   }
+  ul,
+  ol {
+    @apply list-disc list-inside pl-2;
+  }
+  a {
+    @apply text-indigo-600;
+  }
 }
