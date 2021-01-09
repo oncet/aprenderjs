@@ -12,6 +12,8 @@ export default function CodeEditor(props) {
           lineNumbers: false,
           fontSize: 18,
           contextmenu: false,
+          padding: { top: 10 },
+          renderLineHighlight: 'none',
         }}
         {...props}
       />
