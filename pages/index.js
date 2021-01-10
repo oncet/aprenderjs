@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import LinkButton from '../components/link-button'
+import Head from "next/head";
+import LinkButton from "../components/link-button";
 
 export default function Home() {
   return (
@@ -12,5 +12,5 @@ export default function Home() {
       <p>Cursos gratuitos de JavaSript en español.</p>
       <LinkButton href="cursos">Empezar ahora</LinkButton>
     </>
-  )
+  );
 }
