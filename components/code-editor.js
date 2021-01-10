@@ -1,6 +1,10 @@
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
+import Spinner from "../components/spinner";
 
-const MonacoEditor = dynamic(import('react-monaco-editor'), { ssr: false })
+const MonacoEditor = dynamic(import("react-monaco-editor"), {
+  ssr: false,
+  loading: Spinner,
+});
 
 export default function CodeEditor(props) {
   return (
@@ -13,10 +17,10 @@ export default function CodeEditor(props) {
           fontSize: 18,
           contextmenu: false,
           padding: { top: 10 },
-          renderLineHighlight: 'none',
+          renderLineHighlight: "none",
         }}
         {...props}
       />
     </div>
-  )
+  );
 }
