@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
       <h1>Aprender JavaScript</h1>
       <p>Cursos gratuitos de JavaSript en español.</p>
-      <LinkButton href="cursos">Empezar ahora</LinkButton>
+      <LinkButton href="/cursos">Empezar ahora</LinkButton>
     </>
   );
 }
